@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>
+Done
+</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src = "jquery-3.5.1.js"></script>
+<style>
+
+
+
+.deliv{
+width:15vw;
+position:absolute;
+opacity: 0;
+}
+
+.deliv_pic{
+width:100%;
+}
+
+.message{
+width:100%;
+margin:30vh auto 0 auto;
+text-align:center
+}
+
+.O, .R1, .D, .E1, .R, .S, .E, .N, .T{
+display:inline-block;
+font-family:sans-serif;
+font-size:2rem;
+opacity:0;
+}
+
+.S{
+margin-left:2rem;
+}
+
+.home{
+text-align:center;
+opacity:0;
+}
+
+.outer{
+display:inline-block;
+padding:5px;
+background-color:#2196f3;
+}
+
+button{
+display:inline-block;
+padding:5px;
+background-color:#2196f3;
+color:white;
+border:solid 3px white;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="message">
+<div class="O">O</div>
+<div class="R1">R</div>
+<div class="D">D</div>
+<div class="E1">E</div>
+<div class="R">R</div>
+<div class="S">S</div>
+<div class="E">E</div>
+<div class="N">N</div>
+<div class="T">T</div>
+</div>
+<div class="home"><a><div class="outer"><button>Back To Home</button></div></a></div>
+
+<div class="deliv"><img class="deliv_pic" src="car-delivery.png" /> </div>
+
+<script>
+$(function(){
+
+$(".deliv").animate({opacity:1}, 500);
+$(".deliv").animate({right:1}, 1000);
+$(".deliv").animate({opacity:0}, 500, function(){
+$(".O").animate({opacity:1}, 100, function(){
+$(".R1").animate({opacity:1}, 100, function(){
+$(".D").animate({opacity:1}, 100, function(){
+$(".E1").animate({opacity:1}, 100, function(){
+$(".R").animate({opacity:1}, 100, function(){
+$(".S").animate({opacity:1}, 100, function(){
+$(".E").animate({opacity:1}, 100, function(){
+$(".N").animate({opacity:1}, 100, function(){
+$(".T").animate({opacity:1}, 100, function(){
+$(".home").animate({opacity:1}, 100);
+});
+});
+});
+});
+});
+});
+});
+
+});
+});
+
+});
+
+
+});
+</script>
+</body>
+
+</html>
